@@ -13,8 +13,8 @@ export default function App() {
   const dict = useMemo(() => ({
     en: {
       seo: {
-        title: 'Kids Academy Sibiu — Colorful, caring daycare & preschool',
-        description: 'A joyful, trustworthy daycare in Sibiu focused on play, smiles, and safety. See happy photos, view programs, and enroll easily today.'
+        title: 'Kids Academy Sibiu — Trusted daycare & preschool',
+        description: 'Safe, caring and transparent. Warm teachers, small groups and clear communication with parents. Explore our programs and enroll easily.'
       },
       nav: {
         programs: 'Programs',
@@ -23,9 +23,9 @@ export default function App() {
       },
       cta: { explore: 'See programs', enroll: 'Enroll now' },
       hero: {
-        badge: 'Sibiu • Daycare & Preschool',
-        title: 'Colorful days. Happy kids. Peace of mind for parents.',
-        subtitle: 'Warm educators, small groups, and lots of smiling play. Browse real photos and get in touch — we’ll guide you through enrollment.',
+        badge: 'Safety • Care • Trust',
+        title: 'Childcare you can trust.',
+        subtitle: 'Warm educators, clear communication, verified safety. Simple enrollment.',
         gdpr: 'We respect your privacy. Your details are used only to contact you about enrollment.'
       },
       programs: {
@@ -54,8 +54,8 @@ export default function App() {
     },
     ro: {
       seo: {
-        title: 'Kids Academy Sibiu — Natură, grijă și încredere',
-        description: 'Creșă și grădiniță în Sibiu, inspirate de natură: joacă în siguranță, educatori calzi și programe echilibrate. Vezi poze reale, descoperă programele și înscrie-te ușor.'
+        title: 'Kids Academy Sibiu — Îngrijire în care ai încredere',
+        description: 'Siguranță, grijă și comunicare clară cu părinții. Educatori calzi, grupe mici și proceduri verificate. Descoperă programele și înscrie-te simplu.'
       },
       nav: {
         programs: 'Programe',
@@ -64,9 +64,9 @@ export default function App() {
       },
       cta: { explore: 'Vezi programele', enroll: 'Înscrie-te' },
       hero: {
-        badge: 'Sibiu • Creșă & Grădiniță',
-        title: 'Aproape de natură. Aproape de copii. Liniște pentru părinți.',
-        subtitle: 'Grupe mici, joacă în aer liber și rutine blânde. Vezi poze reale și contactează-ne — te ghidăm în tot procesul de înscriere.',
+        badge: 'Siguranță • Grijă • Încredere',
+        title: 'Îngrijire în care poți avea încredere.',
+        subtitle: 'Educație caldă, comunicare clară, siguranță verificată. Înscriere rapidă.',
         gdpr: 'Îți respectăm confidențialitatea. Folosim datele doar pentru a te contacta despre înscriere.'
       },
       programs: {
