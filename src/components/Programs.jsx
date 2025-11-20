@@ -4,19 +4,19 @@ export default function Programs({ t }) {
       title: t.programs.nursery.title,
       age: t.programs.nursery.age,
       desc: t.programs.nursery.desc,
-      color: 'from-rose-200 to-rose-100',
+      color: 'from-emerald-100 to-emerald-50',
     },
     {
       title: t.programs.preschool.title,
       age: t.programs.preschool.age,
       desc: t.programs.preschool.desc,
-      color: 'from-amber-200 to-amber-100',
+      color: 'from-lime-100 to-lime-50',
     },
     {
       title: t.programs.after.title,
       age: t.programs.after.age,
       desc: t.programs.after.desc,
-      color: 'from-teal-200 to-teal-100',
+      color: 'from-amber-100 to-amber-50',
     },
   ]
 
@@ -32,7 +32,7 @@ export default function Programs({ t }) {
             <div key={i} className={`rounded-2xl bg-gradient-to-b ${p.color} p-6 shadow-sm border border-white/60`}>
               <div className="flex items-baseline justify-between mb-2">
                 <h3 className="text-xl font-extrabold text-slate-900">{p.title}</h3>
-                <span className="text-sm font-semibold text-slate-700 bg-white/60 rounded-full px-3 py-1">{p.age}</span>
+                <span className="text-sm font-semibold text-emerald-800 bg-white/70 rounded-full px-3 py-1">{p.age}</span>
               </div>
               <p className="text-slate-700">{p.desc}</p>
             </div>

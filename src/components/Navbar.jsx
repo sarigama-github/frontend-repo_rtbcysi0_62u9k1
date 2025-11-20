@@ -10,7 +10,6 @@ export default function Navbar({ t, lang, setLang }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Keep only the essential sections
   const navItems = [
     { id: 'gallery', label: t.nav.gallery },
     { id: 'programs', label: t.nav.programs },
@@ -20,13 +19,13 @@ export default function Navbar({ t, lang, setLang }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all ${
-        scrolled ? 'backdrop-blur bg-white/80 shadow-sm' : 'bg-gradient-to-r from-rose-50/80 via-amber-50/80 to-teal-50/80'
+        scrolled ? 'backdrop-blur bg-white/80 shadow-sm' : 'bg-gradient-to-r from-emerald-50/90 via-lime-50/90 to-amber-50/90'
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           <a href="#home" className="flex items-center gap-2 min-w-0">
-            <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-pink-400 via-amber-300 to-teal-300 shadow-inner shadow-amber-200" />
+            <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 via-lime-300 to-amber-300 shadow-inner shadow-amber-200" />
             <div className="font-extrabold text-lg text-slate-800 whitespace-nowrap">Kids Academy</div>
           </a>
           <nav className="hidden md:flex items-center gap-4 lg:gap-5 flex-nowrap">
@@ -34,7 +33,7 @@ export default function Navbar({ t, lang, setLang }) {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-slate-700 hover:text-orange-600 transition font-semibold text-sm whitespace-nowrap underline-offset-4 hover:underline"
+                className="text-slate-700 hover:text-emerald-700 transition font-semibold text-sm whitespace-nowrap underline-offset-4 hover:underline"
               >
                 {item.label}
               </a>
@@ -47,7 +46,7 @@ export default function Navbar({ t, lang, setLang }) {
             </button>
             <a
               href="#contact"
-              className="ml-1 inline-flex items-center rounded-full bg-gradient-to-r from-orange-500 to-rose-500 px-3 py-1.5 text-white text-sm font-bold shadow hover:from-orange-600 hover:to-rose-600"
+              className="ml-1 inline-flex items-center rounded-full bg-emerald-600 px-3 py-1.5 text-white text-sm font-bold shadow hover:bg-emerald-700"
             >
               {t.cta.enroll}
             </a>
@@ -83,7 +82,7 @@ export default function Navbar({ t, lang, setLang }) {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-orange-500 to-rose-500 px-4 py-2 text-white font-bold shadow"
+                  className="inline-flex items-center rounded-full bg-emerald-600 px-4 py-2 text-white font-bold shadow hover:bg-emerald-700"
                 >
                   {t.cta.enroll}
                 </a>

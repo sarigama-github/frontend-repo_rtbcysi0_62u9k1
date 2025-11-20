@@ -7,7 +7,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
-  const [lang, setLang] = useState('en')
+  // Default language set to Romanian
+  const [lang, setLang] = useState('ro')
 
   const dict = useMemo(() => ({
     en: {
@@ -53,8 +54,8 @@ export default function App() {
     },
     ro: {
       seo: {
-        title: 'Kids Academy Sibiu — Colorat, cu suflet și de încredere',
-        description: 'Grădiniță și creșă pline de culoare în Sibiu, cu joacă și siguranță. Vezi poze reale, descoperă programele și înscrie-te ușor.'
+        title: 'Kids Academy Sibiu — Natură, grijă și încredere',
+        description: 'Creșă și grădiniță în Sibiu, inspirate de natură: joacă în siguranță, educatori calzi și programe echilibrate. Vezi poze reale, descoperă programele și înscrie-te ușor.'
       },
       nav: {
         programs: 'Programe',
@@ -64,18 +65,18 @@ export default function App() {
       cta: { explore: 'Vezi programele', enroll: 'Înscrie-te' },
       hero: {
         badge: 'Sibiu • Creșă & Grădiniță',
-        title: 'Zile colorate. Copii fericiți. Liniște pentru părinți.',
-        subtitle: 'Educatori calzi, grupe mici și multă joacă cu zâmbet. Vezi poze reale și contactează-ne — te ghidăm la înscriere.',
+        title: 'Aproape de natură. Aproape de copii. Liniște pentru părinți.',
+        subtitle: 'Grupe mici, joacă în aer liber și rutine blânde. Vezi poze reale și contactează-ne — te ghidăm în tot procesul de înscriere.',
         gdpr: 'Îți respectăm confidențialitatea. Folosim datele doar pentru a te contacta despre înscriere.'
       },
       programs: {
         title: 'Programele noastre',
         subtitle: 'Alege simplu, în ritmul familiei',
-        nursery: { title: 'Creșă', age: '1–3 ani', desc: 'Rutine blânde • Joc senzorial • Primele cuvinte' },
-        preschool: { title: 'Grădiniță', age: '3–5 ani', desc: 'Învățare prin joc • Matematică & litere timpurii' },
-        after: { title: 'After-school', age: '5–7 ani', desc: 'Teme asistate • Cluburi creative • Prieteni' },
+        nursery: { title: 'Creșă', age: '1–3 ani', desc: 'Rutine blânde • Joc senzorial • Adaptare cu zâmbet' },
+        preschool: { title: 'Grădiniță', age: '3–5 ani', desc: 'Învățare prin joc • Litere și numere timpurii' },
+        after: { title: 'After-school', age: '5–7 ani', desc: 'Teme asistate • Ateliere creative • Prieteni' },
       },
-      gallery: { title: 'Viața la Kids Academy', subtitle: 'Momente reale de joacă și prietenie' },
+      gallery: { title: 'Momente din viața noastră', subtitle: 'Joacă, natură și prietenie' },
       contact: {
         title: 'Contact & înscrieri',
         subtitle: 'Spune-ne câteva detalii despre copil și programul dorit. Te sunăm în aceeași zi.',
@@ -109,7 +110,7 @@ export default function App() {
   }, [t])
 
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-neutral-50 text-slate-900">
       <Navbar t={t} lang={lang} setLang={setLang} />
       <main>
         <Hero t={t} />

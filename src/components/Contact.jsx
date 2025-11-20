@@ -11,7 +11,7 @@ export default function Contact({ t }) {
   }
 
   return (
-    <section id="contact" className="py-16 bg-gradient-to-b from-white to-orange-50">
+    <section id="contact" className="py-16 bg-gradient-to-b from-white to-emerald-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10">
           <div>
@@ -21,27 +21,27 @@ export default function Contact({ t }) {
             <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.parentName}</label>
-                <input name="parentName" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <input name="parentName" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.phone}</label>
-                <input name="phone" type="tel" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <input name="phone" type="tel" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.email}</label>
-                <input name="email" type="email" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <input name="email" type="email" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.childName}</label>
-                <input name="childName" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <input name="childName" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.childAge}</label>
-                <input name="childAge" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <input name="childAge" required className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.program}</label>
-                <select name="program" className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300">
+                <select name="program" className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300">
                   <option>{t.programs.nursery.title}</option>
                   <option>{t.programs.preschool.title}</option>
                   <option>{t.programs.after.title}</option>
@@ -49,7 +49,7 @@ export default function Contact({ t }) {
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-slate-700 mb-1">{t.form.message}</label>
-                <textarea name="message" rows="4" className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                <textarea name="message" rows="4" className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300" />
               </div>
               <div className="sm:col-span-2">
                 <label className="inline-flex items-start gap-2 text-sm text-slate-600">
@@ -57,11 +57,11 @@ export default function Contact({ t }) {
                   <span>{t.contact.gdpr}</span>
                 </label>
               </div>
-              <button type="submit" className="sm:col-span-2 inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-white font-semibold hover:bg-orange-600">
+              <button type="submit" className="sm:col-span-2 inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">
                 {t.cta.enroll}
               </button>
               {submitted && (
-                <p className="sm:col-span-2 text-green-700 font-medium">{t.contact.success}</p>
+                <p className="sm:col-span-2 text-emerald-700 font-medium">{t.contact.success}</p>
               )}
             </form>
           </div>
